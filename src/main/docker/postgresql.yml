@@ -1,0 +1,11 @@
+version: '2'
+services:
+  pprocommons-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/pprocommons/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=pprocommons
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
